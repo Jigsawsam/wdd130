@@ -1,0 +1,59 @@
+@import url('https://fonts.google.com/specimen/Unbounded?preview.text=Lorem%20ipsum%20dolor%20sit&preview.text_type=custom');
+
+:root {
+  --primary-color: #e69d00;
+  --secondary-color: #c9d430;
+  --accent1-color: #4f63c0;
+  --accent2-color: #74b35b;
+  
+  --heading-font: 'Unbounded', sans-serif;
+  --paragraph-font: 'Sigmar', sans-serif;
+
+  --nav-background-color: #707072;
+  --nav-link-color: #00e1ff;
+  --nav-hover-link-color: #ffc98f;
+  --nav-hover-background-color: #636e49;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+header {
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+p {
+  padding: 25px;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
