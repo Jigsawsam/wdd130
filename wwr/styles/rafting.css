@@ -15,11 +15,6 @@
   --nav-hover-background-color: #636e49;
 }
 
-* {
-  margin: auto;
-  max-width: 960px;
-}
-
 header {
   padding: 20px;
   color: var(--accent1-color);
