@@ -93,4 +93,19 @@
         height: 100%;
         object-fit: cover;
       }
+      section {
+        overflow: auto;
+      }
       
+      .gallery img {
+        display: block;
+        max-width: 50%;
+        height: auto;
+        margin-bottom: 1rem;
+      
+      }
+      nav.sociallinks img {
+        height: 2rem;
+        width: 2rem; /* Adjust the width to your desired size */
+        margin-left: 1rem;
+      }
