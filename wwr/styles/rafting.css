@@ -8,12 +8,13 @@
   
   --heading-font: 'Unbounded', sans-serif;
   --paragraph-font: 'Sigmar', sans-serif;
-  
+
   --nav-background-color: #707072;
   --nav-link-color: #00e1ff;
   --nav-hover-link-color: #ffc98f;
   --nav-hover-background-color: #636e49;
 }
+
 
 * {
   margin: auto;
