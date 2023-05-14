@@ -132,16 +132,32 @@ section {
   margin-bottom: 1rem;
 }
 
-nav.sociallinks img {
-  height: 2rem;
-  width: 2rem; 
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+footer nav.sociallinks {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+footer a {
   margin-left: 1rem;
+}
+
+footer img {
+  height: 2rem;
+  width: 2rem;
 }
 
 section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 10px;
 }
 
 section h2 {
