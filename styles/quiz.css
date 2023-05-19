@@ -49,6 +49,11 @@ input[type="checkbox"] {
   vertical-align: bottom;
 }
 
+label {
+  text-align: left;
+  padding-right: 1rem;
+}
+
 button {
   margin: 1rem;
   background-color: navy;
