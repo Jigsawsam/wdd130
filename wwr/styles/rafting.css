@@ -140,9 +140,18 @@ footer {
 }
 
 footer nav.sociallinks {
-  margin-left: auto;
   display: flex;
   align-items: center;
+  margin-left: auto;
+}
+
+footer nav.sociallinks a {
+  margin-left: 1rem;
+}
+
+footer nav.sociallinks img {
+  height: 2rem;
+  width: 2rem;
 }
 
 footer a {
@@ -168,13 +177,7 @@ section p {
   grid-column: 1/3;
 }
 
-/* History*/
-section .gallery {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
-
+/* History */
 section .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -182,29 +185,132 @@ section .gallery {
   align-items: flex-start;
 }
 
-section .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-/* The 5 images */
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  
   justify-content: flex-start;
   gap: 20px;
 }
 
 figure {
-  width : 100px;
-  margin : 0;
-  }
+  width: 100px;
+  margin: 0;
+}
 
 .gallery img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+
+.contact-image {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.image-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.image-team figure {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+}
+
+.image-team img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-team figcaption {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  margin-top: 20px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  vertical-align: bottom;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button[type="submit"] {
+  margin: 1rem auto;
+}
+
+button {
+  margin: 1rem;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: rgb(55, 192, 255);
+}
+
+form fieldset {
+  margin-bottom: 20px;
+}
+
+.form-item {
+  margin-bottom: 10px;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.column1 {
+  grid-column: 1;
+}
+
+.column2 {
+  grid-column: 2;
+}
+
+.form-item.column1 {
+  display: flex;
+  align-items: center;
+}
+
+.form-item.column1 label {
+  margin-right: .5rem;
 }

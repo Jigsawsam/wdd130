@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bitner Torres">
+    <meta name="description" content="Contact us">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="styles/rafting.css" />
+    <style>
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Unbounded', sans-serif;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.jpeg" alt="Rafting Site Logo">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    
+    <main>
+     <h1>Contact us</h1>
+
+
+     <h2>Send us a message</h2>
+
+     <p>White water rafting</p>
+     <p>Phone: (248)434-5508</p>
+    <p>Email: <a href="mailto:">email</a></p>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34715.402288197794!2d-117.37511517607018!3d48.984318461163774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53631ff0cc2fbe55%3A0x34243387a7642fd0!2sBoundary%20Dam%20Campground!5e1!3m2!1sen!2sus!4v1684621468548!5m2!1sen!2sus" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <section class="image-team">
+      <figure>
+        <img src="images/ownerraft.jpg" alt="Owner of white water rafting company">
+        <figcaption>Owner</figcaption>
+      </figure>
+      <figure>
+        <img src="images/client.jpg" alt="Managers">
+        <figcaption>Managers</figcaption>
+      </figure>
+      <figure>
+        <img src="images/raftcrew.jpg" alt="Crew">
+        <figcaption>The crew</figcaption>
+      </figure>
+    </section>
+
+    <form>
+      <fieldset>
+        <legend>Contact Information</legend>
+        <div class="form-item column2">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="form-item column2">
+          <label for="useremail">Email:</label>
+          <input type="email" id="useremail" name="useremail">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Message</legend>
+        <div class="form-item column1">
+          <label for="message">What can we help you with?</label>
+          <select id="message" name="message">
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Reservation Question">Reservation Question</option>
+            <option value="Website Suggestion">Website Suggestion</option>
+          </select>
+        </div>
+        <div class="form-item column1">
+          <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+          <input type="checkbox" id="newsletter" name="newsletter">
+        </div>
+      
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+
+    </main>
+    <footer>
+      <nav class="sociallinks">
+        <p>&copy; 2023 Rafting Company | Bitner Torres</p>
+        <a href="#"><img src="images/facebooklogo.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/twitterlogo.png" alt="Twitter" /></a>
+        <a href="#"><img src="images/instagramlogo.png" alt="Instagram" /></a>
+      </nav>
+    </footer>
+  </body>
+</html>
