@@ -56,7 +56,7 @@
 
     <form>
       <fieldset>
-        <legend>Contact Information</legend>
+        <legend>Message us</legend>
         <div class="form-item column2">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name">
@@ -65,16 +65,17 @@
           <label for="useremail">Email:</label>
           <input type="email" id="useremail" name="useremail">
         </div>
-      </fieldset>
-      <fieldset>
-        <legend>Message</legend>
         <div class="form-item column1">
-          <label for="message">What can we help you with?</label>
-          <select id="message" name="message">
+          <label for="help">What can we help you with?</label>
+          <select id="help" name="help">
             <option value="General Inquiry">General Inquiry</option>
             <option value="Reservation Question">Reservation Question</option>
             <option value="Website Suggestion">Website Suggestion</option>
           </select>
+        </div>
+        <div class="form-item column1">
+          <label for="feedback">Send us a message:</label>
+          <textarea id="feedback" name="feedback" rows="1" placeholder="Write here..."></textarea>
         </div>
         <div class="form-item column1">
           <label for="newsletter">Please subscribe me to the monthly newsletter</label>
