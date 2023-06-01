@@ -55,16 +55,21 @@ h2, h3, h4, h5, h6 {
 nav {
   position: sticky;
   top: 0;
+  left: 0; 
   background-color: var(--nav-background-color);
-  padding: 20px; 
-  height: 100px; 
+  padding: 20px;
+  text-align: center;
+  width: 95%; 
+ 
 }
 
 nav a {
   display: inline-block;
-  margin-right: 200px;
+  margin-right: 100px;
   color: var(--nav-link-color);
 }
+
+
 
 nav a:hover {
   color: var(--nav-hover-link-color);
@@ -152,15 +157,7 @@ footer nav.sociallinks a {
 footer nav.sociallinks img {
   height: 2rem;
   width: 2rem;
-}
-
-footer a {
-  margin-left: 1rem;
-}
-
-footer img {
-  height: 2rem;
-  width: 2rem;
+  margin-right: -22rem; 
 }
 
 section {
@@ -188,9 +185,11 @@ section .gallery {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
+
 
 figure {
   width: 100px;
@@ -279,6 +278,7 @@ button {
   border-radius: .5rem;
   padding: .75rem;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 button:hover {
@@ -314,3 +314,123 @@ form fieldset {
 .form-item.column1 label {
   margin-right: .5rem;
 }
+
+.image-book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.image-book form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  max-width: 250px;
+  transition: background-color 0.3s ease; 
+}
+
+.image-book form:hover {
+  background-color: #ddd; 
+}
+
+.image-book img {
+  display: block;
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.image-book figcaption {
+  display: none; 
+}
+
+.image-book form:hover figcaption {
+  display: block; 
+}
+
+.reservation-text {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: bold;
+}
+
+.reservation-text {
+  margin-bottom: 20px; 
+}
+
+.image-book form:hover img {
+  transform: scale(1.2);
+}
+
+.newsletter-form .form-group {
+  margin-bottom: 10px;
+}
+
+.newsletter-form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.newsletter-form label input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+  width: 90%;
+  padding: 5px;
+}
+
+.newsletter-form button[type="submit"] {
+  background-color: #000280;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: rgb(55, 192, 255);
+}
+
+.newsletter-form {
+  margin-bottom: -10px;
+}
+
+.newsletter-form button[type="submit"] {
+  margin-top: -15px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 200px;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.grid-item p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
